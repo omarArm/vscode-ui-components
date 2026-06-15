@@ -58,7 +58,7 @@ export type CDTTreeProps<T extends CDTTreeItemResource = CDTTreeItemResource> = 
     dataSource?: CDTTreeItem<T>[];
     /**
      * Whether the tree data is still loading.
-        * Defaults to true while the data source or column definitions are undefined.
+     * Defaults to true while the data source or column definitions are undefined.
      */
     loading?: boolean;
     /**
@@ -671,6 +671,7 @@ export const CDTTree = <T extends CDTTreeItemResource>(props: CDTTreeProps<T>) =
                     loading ? (
                         <div className={'empty-message loading-message'} role='status' aria-label='Loading data'>
                             <Spin size='small' />
+                            <span className={'loading-message-text'}>Loading…</span>
                         </div>
                     ) : (
                         <div className={'empty-message'}>No data available.</div>

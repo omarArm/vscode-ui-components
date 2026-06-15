@@ -112,6 +112,10 @@
     background-color: var(--vscode-progressBar-background, var(--vscode-editor-foreground));
 }
 
+.ant-table-empty .loading-message .loading-message-text {
+    margin-left: 0.5em;
+}
+
 .ant-table-empty .ant-table-body {
     overflow: hidden !important;
 }
